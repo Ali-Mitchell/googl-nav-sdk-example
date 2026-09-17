@@ -18,6 +18,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_navigation_flutter/google_navigation_flutter.dart';
 import 'package:google_places_flutter/google_places_flutter.dart';
 import 'package:google_places_flutter/model/prediction.dart';
@@ -3079,6 +3080,10 @@ class _NavigationSearchPageState extends ExamplePageState<NavigationSearchPage> 
     );
     await _addWaypoint();
     _searchController.clear();
+    // Dismiss keyboard to reveal map
+    if (!mounted) return;
+    // Use platform channel to forcefully hide keyboard
+    unawaited(SystemChannels.textInput.invokeMethod('TextInput.hide'));
   }
 
   Widget _buildColorSchemeChip(MapColorScheme scheme, String label) {
