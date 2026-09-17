@@ -17,6 +17,8 @@ export 'map.dart';
 export 'markers.dart';
 export 'multiple_views.dart';
 export 'navigation.dart';
+export 'navigation_search.dart'
+    hide SimulationState, SimulationStateDescription;
 export 'navigation_without_map.dart';
 export 'poi_click.dart';
 export 'polygons.dart';
