@@ -1130,7 +1130,7 @@ class _NavigationPageState extends ExamplePageState<NavigationPage> {
   }
 
   Future<void> _convertNewWaypointMarkerToDestinationMarker(
-    final int index,
+    int index,
   ) async {
     final String title = 'Waypoint $index';
     final ImageDescriptor waypointMarkerImage =
