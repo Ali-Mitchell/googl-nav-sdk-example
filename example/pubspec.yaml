@@ -21,24 +21,24 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.8
-  device_info_plus: ^11.3.0
+  device_info_plus: ^13.2.0
   flutter:
     sdk: flutter
   google_navigation_flutter:
     path: ../
   google_places_flutter: ^2.1.1
   http: ^1.1.2
-  permission_handler: ^11.3.1
+  permission_handler: ^13.0.2
   pointer_interceptor: ^0.10.1+2
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
   integration_test:
     sdk: flutter
   meta: any
-  patrol: 4.9.0
+  patrol: 4.10.0
   pub_semver: ^2.1.4
   test_api: any
 
